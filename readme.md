@@ -1,4 +1,6 @@
-# Node.js CRUD API with JSON Server
+# 📚 Library System API Testing Project
+
+<img src="https://www.skoolbeep.com/blog/wp-content/uploads/2020/12/WHAT-IS-THE-PURPOSE-OF-A-LIBRARY-MANAGEMENT-SYSTEM-min.png" alt="Library Logo" width="500"/>
 
 This project demonstrates a RESTful API built with **Node.js** and **JSON Server**. It includes endpoints for **Books**, **Households**, **Users**, and **Wishlists**, supporting full CRUD operations: **Create**, **Read**, **Update**, and **Delete**.
 
