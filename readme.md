@@ -145,6 +145,7 @@ Where `admin:admin` is the valid username and password (or `admin_test:admin_tes
 
 - Node.js (v14 or later)
 - npm (v6 or later)
+- Newman and HTML Extra Reporter
 
 ### Install Dependencies
 
@@ -203,13 +204,33 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 - Added **Special Routes** for **POST `/users`** (creating a wishlist) and **POST `/wishlists/:wishlistId/books/:bookId`** (adding books to wishlists).
 - Authentication notes have been added for protected routes.
 
-Feel free to modify and extend the documentation further based on your project's needs. Let me know if you'd like further assistance!
-
-## Contribution to shadyahmed9719@gmail.com
-
 
 ## After Cloning
 After cloning the repo, make sure to run `npm install` in the root of the project directory.
 
 ## Running the application
 From the command line, in the root of the project, run `npm run start:dev` this will start the server on port 3000
+```
+## 🚀 Running Tests
+
+You can run the tests in two ways:
+
+### Option 1: Run manually from Postman
+- Open Postman.
+- Select the imported collection located in the `postman_exports` folder.
+   - Collection file: `Library.postman_collection.json`
+- Choose the correct environment from the `postman_exports` folder.
+  - Environment file: `Dev.postman_environment.json`
+- Click **Run** to execute the test cases manually.
+
+### Option 2: Run automatically using `run.bat`
+- Navigate to the `runner` folder inside the project directory.
+- Locate and double-click the `run.bat` file to start running the tests.
+- This will automatically:
+  - Run the Postman collection using Newman.
+  - Generate an **HTML report** inside the `report/` folder.
+ 
+## 📄 Notes
+
+- After the test execution, an HTML report will be available in the `report` folder.
+- If you face permission issues, run the terminal or `.bat` file as an administrator.
